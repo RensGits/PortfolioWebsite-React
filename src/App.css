@@ -1,0 +1,56 @@
+#my-scrollbar {
+  width: 100vw;
+  height: 200vh;
+  overflow: auto;
+}
+
+p, a {
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+
+}
+
+#root {
+  display: grid;
+  justify-content: center;
+  background-color: black;
+}
+
+.appGrid {
+  display: grid;
+  grid-template-columns: 91vh;
+  grid-template-rows: 6vh 200vh;
+  justify-content: center;
+  
+  background-color:black;
+
+}
+
+nav {
+  
+  display: grid;
+  width: 91vh;
+  height: 9.5vh;
+  grid-template-columns: 5% 77.2% 10% 10%;
+  grid-template-rows: 100%;
+  background-color: black;
+  align-items:flex-end;
+  position: fixed;
+  
+}
+
+.homeBody{
+  display: grid;
+  margin-top: 10%;
+  grid-template-rows: 4vh 4vh 4vh 5vh 160vh;
+
+}
+
+.projectBody{
+  display: grid;
+  grid-template-rows: 34.5vh 34.5vh 34.5vh 34.5vh;
+  gap: 10vh;
+  
+}
+
