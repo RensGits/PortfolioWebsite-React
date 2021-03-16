@@ -1,0 +1,13 @@
+.projectItem{
+    display: grid;
+    grid-template-columns: 28.5% 71.5%;
+    background-color: beige;
+  }
+  
+  .projectBlockLeft{
+    background-color: white;
+  }
+  
+  .projectBlockRight{
+    background-color: gray;
+  }
