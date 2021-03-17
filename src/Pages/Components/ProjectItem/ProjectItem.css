@@ -1,13 +1,51 @@
 .projectItem{
     display: grid;
-    grid-template-columns: 28.5% 71.5%;
+    grid-template-columns: 30% 70%;
     background-color: beige;
+    height: auto;
+    overflow: hidden;
   }
   
   .projectBlockLeft{
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
     background-color: white;
   }
+
+  .projectTitle{
+    color:red;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 4%;
+  }
+
+  .projectDescription{
+    color: black;
+    font-size: 0.7rem;
+    margin-left: 4%;
+  }
+  .projectCategory{
+    color: red;
+    writing-mode: vertical-rl;
+  }
+
   
   .projectBlockRight{
+    display: grid;
+    
     background-color: gray;
+  }
+
+  .projectImage {
+    
+    width: 140%;
+    height: auto;
+  }
+
+  .projectImageTwo {
+    
+    
+    width: 100%;
+    height: auto;
+    margin-top: -20%;
   }
