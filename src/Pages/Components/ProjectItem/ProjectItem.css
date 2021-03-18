@@ -1,15 +1,21 @@
 .projectItem{
     display: grid;
     grid-template-columns: 30% 70%;
-    background-color: beige;
-    height: auto;
+    
+    height: 35vh;
+    z-index: 998;
+    position: relative;
+    z-index: 0;
     overflow: hidden;
+    
   }
   
   .projectBlockLeft{
     display: grid;
     grid-template-rows: 33% 33% 33%;
     background-color: white;
+    z-index: 1;
+    position: relative;
   }
 
   .projectTitle{
@@ -17,29 +23,36 @@
     font-family: 'Ramabhadra', sans-serif;
     font-size: 1.5rem;
     margin-left: 4%;
+    overflow: hidden;
   }
 
   .projectDescription{
     color: black;
     font-size: 0.7rem;
     margin-left: 4%;
+    overflow: hidden;
   }
   .projectCategory{
     color: red;
     writing-mode: vertical-rl;
+    overflow: hidden;
   }
 
   
   .projectBlockRight{
-    display: grid;
     
+    position: relative;
+    z-index: 1;
     background-color: gray;
+    
   }
 
   .projectImage {
     
     width: 140%;
     height: auto;
+    position: relative;
+    z-index: -2;
   }
 
   .projectImageTwo {
@@ -47,5 +60,46 @@
     
     width: 100%;
     height: auto;
+    z-index: -2;
+    position: relative;
     margin-top: -20%;
   }
+
+  .projectOverlay {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+    background-color: lightseagreen;
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    align-content: center;
+    justify-items: center;
+    
+  }
+
+  button{
+    position: absolute;
+    z-index: 1000;
+    width: 15vh;
+    height: 3vh;
+    color: white;
+    background-color: red;
+    border-style:hidden;
+    
+  }
+
+  .v {
+    color: white; 
+  margin-top: 21%; }
+
+ 
+
+
+
+ 
+ 

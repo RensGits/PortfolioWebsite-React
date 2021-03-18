@@ -26,6 +26,8 @@ p, a {
   display: grid;
   justify-content: center;
   background-color: black;
+  position: relative;
+  z-index: 0;
 }
 
 .appGrid {
@@ -35,7 +37,8 @@ p, a {
   justify-content: center;
   
   background-color:black;
-
+  position: relative;
+  z-index: 0;
 }
 
 
@@ -47,14 +50,18 @@ p, a {
   display: grid;
   margin-top: 10%;
   grid-template-rows: 4vh 4vh 4vh 5vh 160vh;
+  position: relative;
+  z-index: 0;
 
 }
 
 .projectBody{
   height: 138vh;
   display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 35vh 35vh 35vh 35vh;
   gap: 10vh;
+  position: relative;
+  z-index: 0;
   
 }
 
