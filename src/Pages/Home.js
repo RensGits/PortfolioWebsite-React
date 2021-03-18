@@ -14,6 +14,7 @@ function Home () {
             <motion.p initial = {{y: -100}} animate = {{y:0}} exit = {{y: 0}} transition = {{duration: 0.8}} className = 'cV'>Download my CV</motion.p>
             <p></p>
             <div  className = 'projectBody' >
+                
             <ProjectItem duration = '1' projectname = 'Virus - learn something' category = 'Dart / flutter application'description = 'VIRUS is a playstore live application that gives information on clinically imortant viruses. Virus was my first ever coding project and thought me alot about the road from setting up a project to finalising publication.'  />
             <ProjectItem className = 'projectImage' image = 'weedDoctorOverview.png' duration = '1.2' projectname = 'Weed Doctor' category = 'Dart / flutter application' description = 'Weed Doctor is an application that helps users identify plant diseases based on visual keys in the leaves. ' />
             <ProjectItem className = 'projectImageTwo' image = 'tipula.png' duration = '1.4' projectname = 'Naturalis' category = 'Research / 3D modeling' description = 'At Naturalis Biodiversity Centre I did evolutionairy research into two winged insects. This work had an interesting design element to it...'   />
@@ -25,3 +26,7 @@ function Home () {
 }
 
 export default Home;
+
+// height of ProjectItem should increase when the button belonging to this ProjectItem is clicked.
+// button --> on click , setHeight to height: 200vh
+// specific ProjectItem should have a prop of height
