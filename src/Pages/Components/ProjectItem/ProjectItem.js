@@ -5,36 +5,36 @@ import {useState} from 'react';
 
 function ProjectItem (props) {
     const [proportions,setProportions] = useState ('30% 100%')
-    const [opacityBlockLeft, setOpcacityBlockLeft] = useState ('1')
+    const [opacityBlockLeft, setOpcacityBlockLeft] = useState (1)
+    const [durationText, setDurationText] = useState (0.1)
     return (
         <AnimatePresence>
-        <motion.div  className = 'projectItem' onMouseEnter = {
-            function Animation() {
-                setProportions ('0% 100%'); setOpcacityBlockLeft ('0')}
+        <motion.div  className = 'projectItem' 
+            onMouseEnter = {
+                function Animation() {
+                setProportions ('0% 100%'); setOpcacityBlockLeft (0); setDurationText (0.01 )}
                 } 
-                onMouseLeave = {
-                    function Animation() {setProportions ('30% 100%'); setOpcacityBlockLeft ('1')}
+            onMouseLeave = {
+                    function Animation() {setProportions ('30% 100%'); setOpcacityBlockLeft (1); setDurationText (1)}
                     } 
-            initial = {{y: -100, 'grid-template-columns': '30% 100%'}} 
-            animate = {{y:0, 'grid-template-columns': proportions, }} 
-            exit = {{y: 0,}} 
+            initial = {{y: -100, 'grid-template-columns': proportions}} 
+            animate = {{y:0, 'grid-template-columns': proportions }} 
+            exit = {{y: 0, 'grid-template-columns': proportions }} 
             transition = {{duration: props.duration}} >
                 
             <motion.div className = 'projectBlockLeft' >
                 <motion.p className = 'projectTitle' 
-                    inital = {{opacity: 0 }} 
-                    animate ={{opacity: 1}}
-                    transition = {{duration:2}}
+                    inital = {{opacity: opacityBlockLeft}} animate ={{opacity: opacityBlockLeft}} exit = {{opacity: opacityBlockLeft}} transition = {{duration: durationText, delay: durationText}}
                      >
                        
                 {props.projectname}
                 </motion.p>
                 
-                <motion.p className = 'projectDescription' inital = {{opacity:1}} animate ={{opacity: opacityBlockLeft}} >{props.description}</motion.p>
-                <motion.p className = 'projectCategory' inital = {{opacity:1}} animate ={{opacity: opacityBlockLeft}} >{props.category}</motion.p>
+                <motion.p className = 'projectDescription' inital = {{opacity: opacityBlockLeft}} animate ={{opacity: opacityBlockLeft}} exit = {{opacity: opacityBlockLeft}} transition = {{duration: durationText, delay: durationText }}>{props.description}</motion.p>
+                <motion.p className = 'projectCategory' inital = {{opacity: opacityBlockLeft}} animate ={{opacity: opacityBlockLeft}} exit = {{opacity: opacityBlockLeft}} transition = {{duration: durationText, delay: durationText}}>{props.category}</motion.p>
             </motion.div>
             <motion.div className = 'projectOverlay' whileHover = {{opacity: 0.7}} >
-                <button >TO PROJECT</button>
+                <button onClick>TO PROJECT</button>
                 <p className = 'v'>v</p>
             </motion.div>
             <div className = 'projectBlockRight'>
