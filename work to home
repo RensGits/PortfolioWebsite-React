@@ -1,0 +1,16 @@
+
+// in ProjectTile --> button
+
+const [checked, setChecked] = useState(false);
+
+<button onClick= {
+    () => setChecked((value) => !value, console.log(checked))
+    } >
+</button>
+
+
+in home --> projectTile component : 
+
+if checked(true) {
+  setExpand (grid-column-template: 
+}
