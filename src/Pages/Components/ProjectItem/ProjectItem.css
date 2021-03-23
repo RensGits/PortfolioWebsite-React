@@ -1,6 +1,7 @@
 .projectItem{
     display: grid;
     grid-template-columns: 30% 70%;
+    grid-template-rows: 35vh auto;
     
     height: 100%;
     z-index: 998;
@@ -98,7 +99,7 @@
     
   }
 
-  button{
+  .button{
     position: absolute;
     z-index: 1000;
     width: 15vh;

@@ -1,0 +1,51 @@
+.topImage {
+    width: 100%;
+    height: auto;
+}
+
+.sectionTwo {
+    display: grid;
+    justify-items: center;
+    
+    background-color:lightgrey;
+    height: 100%;
+}
+
+.sectionThree {
+    background-color: lightgrey;
+    height: 100%;
+}
+
+.sectionFour {
+    background-color:lightgrey;
+    height: 100%;
+}
+
+.sectionFive {
+    background-color: lightgrey;
+    height: 100%;
+}
+
+.virusAppImgSectionTop{
+    margin-top: 2%;
+    margin-right: 1.5%;
+    width: 95%;
+    height: auto;
+}
+
+.virusAppImgSectionTwo{
+    width: 100%;
+    height: auto;
+}
+
+
+.virusAppImgSectionThree{
+    width: 100%;
+    height: auto;
+
+} 
+.virusAppImgSectionFour{
+    width: 100%;
+    height: auto;
+
+} 

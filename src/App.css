@@ -28,6 +28,7 @@ p, a {
   background-color: black;
   position: relative;
   z-index: 0;
+  height: auto;
 }
 
 .appGrid {
@@ -55,10 +56,13 @@ p, a {
 
 }
 
+
+
+
 .projectBody{
   height: 138vh;
   display: grid;
-  grid-template-rows: 35vh 35vh 35vh 35vh;
+  grid-template-rows: auto;
   gap: 10vh;
   position: relative;
   z-index: 0;
