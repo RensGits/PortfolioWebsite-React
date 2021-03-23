@@ -1,0 +1,37 @@
+.quoteHeader{
+    font-size: 2rem;
+}
+
+.infoText{
+    
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.virusBody{
+    height: auto;
+    display: grid;
+    margin-top: 10%;
+    grid-template-rows: 14vh 10vh 0vh 40vh 75vh 75vh 10vh 20vh 4vh;
+   
+  }
+
+  button{
+    
+    font-size: 0.7rem;
+    z-index: 1000;
+    width: 10vh;
+    height: 2.3vh;
+    color: white;
+    background-color: red;
+    border-style:hidden;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+
+  .buttons {
+    height: 100%;
+    
+    
+
+  }
