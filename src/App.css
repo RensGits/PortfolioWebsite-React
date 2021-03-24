@@ -10,7 +10,13 @@ p, a {
   font-size: 0.85rem;
 
 }
+.links {
+  font-size: 2rem;
+}
 
+.hi {
+  font-size: 1rem;
+}
 .cV{
   margin-top: -0.3%;
   color: #E57070;
@@ -34,9 +40,10 @@ p, a {
 .appGrid {
   display: grid;
   grid-template-columns: 91vh;
-  grid-template-rows: 6vh 200vh;
-  justify-content: center;
   
+  justify-content: center;
+  height: auto;
+  width: 94vw;
   background-color:black;
   position: relative;
   z-index: 0;
@@ -50,7 +57,7 @@ p, a {
   height: auto;
   display: grid;
   margin-top: 10%;
-  grid-template-rows: 4vh 4vh 4vh 5vh 160vh;
+  grid-template-rows: 4vh 4vh 4vh 5vh 190vh 10vh 10vh 10vh;
   position: relative;
   z-index: 0;
 
@@ -60,12 +67,27 @@ p, a {
 
 
 .projectBody{
-  height: 138vh;
+  height: auto;
   display: grid;
   grid-template-rows: auto;
   gap: 10vh;
   position: relative;
   z-index: 0;
+  
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 10vh;
+  width: 100%;
+  border-top: 0.1vh solid #E57070;
+  margin-bottom: 10vh;
+ 
+}
+
+.footerText{
+  margin-top: -4.3vh;
   
 }
 

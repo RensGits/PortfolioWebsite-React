@@ -25,9 +25,7 @@ function ProjectItem (props) {
                 
             <motion.div className = 'projectBlockLeft' >
                 <motion.p className = 'projectTitle' 
-                    inital = {{opacity: 0 }} 
-                    animate ={{opacity: 1}}
-                    transition = {{duration:2}}
+                    inital = {{opacity:1}} animate ={{opacity: opacityBlockLeft}}
                      >
                        
                 {props.projectname}
@@ -38,9 +36,9 @@ function ProjectItem (props) {
             </motion.div>
             <motion.div className = 'projectOverlay' whileHover = {{opacity: 0.7}} >
             <Link to = {props.link} className = 'button'>TO PROJECT</Link>
-                <p className = 'v'>v</p>
+                
             </motion.div>
-            <div className = 'projectBlockRight'>
+            <div className = {props.blockright}>
             
                 <img className = {props.className} src= {props.image} alt=""/>
                 

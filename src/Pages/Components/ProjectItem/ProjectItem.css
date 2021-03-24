@@ -23,17 +23,21 @@
     color:red;
     font-family: 'Ramabhadra', sans-serif;
     font-size: 1.5rem;
-    margin-left: 4%;
+    margin-left: 7%;
     overflow: hidden;
   }
 
   .projectDescription{
     color: black;
     font-size: 0.7rem;
-    margin-left: 4%;
+    margin-left: 7%;
+    margin-right: 20%;
     overflow: hidden;
+    text-align: justify;
   }
   .projectCategory{
+    margin-bottom: 4%;
+    text-align: right;
     color: red;
     writing-mode: vertical-rl;
     overflow: hidden;
@@ -43,27 +47,45 @@
   .projectBlockRight{
     
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background-color: gray;
     
   }
 
   .projectImage {
     
-    width: 140%;
+    width: 150%;
     height: auto;
     position: relative;
     z-index: -2;
+    
+    
   }
 
   .projectImageTwo {
     
     
-    width: 100%;
+    width: 80%;
     height: auto;
     z-index: -2;
     position: relative;
-    margin-top: -20%;
+    margin-top: -16%;
+    
+  }
+
+  .projectImageThree {
+    width: 99%;
+    height: auto;
+    position: relative;
+    margin-top: 1.5%;
+  }
+
+  .projectImageFour {
+    margin-top: -1.1%;
+    margin-right: 1%;
+    width: 120%;
+    height: auto;
+    position: relative;
   }
 
   .projectOverlay {
@@ -87,18 +109,32 @@
     position: absolute;
     z-index: 1000;
     width: 15vh;
-    height: 3vh;
+    height: 2.5vh;
     color: white;
     background-color: red;
     border-style:hidden;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0.8vh;
     
+    
+  }
+
+  .button:hover{
+    color: black;
   }
 
   .v {
     color: white; 
   margin-top: 21%; }
 
- 
+  .sixosix{
+    background-color: #606060;
+  }
+
+ .brownobrown{
+    background-color: #decdb9; 
+ }
 
 
 

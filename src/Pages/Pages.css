@@ -1,9 +1,9 @@
 .quoteHeader{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .infoText{
-    
+    font-size: 0.8rem;
     text-align: justify;
     color: whitesmoke;
 }
@@ -12,9 +12,41 @@
     height: auto;
     display: grid;
     margin-top: 10%;
-    grid-template-rows: 14vh 10vh 0vh 40vh 75vh 75vh 10vh 20vh 4vh;
+    grid-template-rows: 14vh 10vh 5vh 40vh 65vh 75vh 10vh 5vh 4vh;
    
   }
+
+  .weedDoctorBody{
+    height: auto;
+    display: grid;
+    margin-top: 10%;
+    grid-template-rows: 14vh 10vh 5vh 97vh 60.1vh 55vh 12vh;
+   
+  }
+
+  
+.naturalisBody{
+  height: auto;
+  display: grid;
+  margin-top: 10%;
+  grid-template-rows: 14vh 20vh 5vh 40vh 65vh 75vh 10vh 5vh 4vh;
+}
+
+.somzoaBody{
+  height: auto;
+  display: grid;
+  margin-top: 10%;
+  grid-template-rows: 14vh 10vh 20vh 60vh 140vh 20vh 60vh; 
+}
+
+.aboutBody{
+  height: auto;
+  display: grid;
+  margin-top: 10%;
+  grid-template-rows: 14vh 10vh 20vh 60vh 140vh 20vh 60vh;
+ 
+}
+
 
   button{
     
@@ -22,15 +54,24 @@
     z-index: 1000;
     width: 10vh;
     height: 2.3vh;
-    color: white;
     background-color: red;
+    color:white;
+    border-radius: 0;
     border-style:hidden;
-    margin-right: 2%;
+    margin-right: 4%;
     margin-top: 2%;
   }
 
+  button:hover{
+    color:black;
+    cursor: pointer;
+  }
+
   .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 100%;
+    width: 23vh;
     
     
 

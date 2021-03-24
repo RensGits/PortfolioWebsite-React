@@ -7,27 +7,27 @@
     display: grid;
     justify-items: center;
     
-    background-color:lightgrey;
+    background-color:#A6A39E;
     height: 100%;
 }
 
 .sectionThree {
-    background-color: lightgrey;
+    background-color:#DEDAD4;
     height: 100%;
 }
 
 .sectionFour {
-    background-color:lightgrey;
+    background-color:#DEDAD4;
     height: 100%;
 }
 
 .sectionFive {
-    background-color: lightgrey;
+    background-color: white;
     height: 100%;
 }
 
 .virusAppImgSectionTop{
-    margin-top: 2%;
+    margin-top: 4.5%;
     margin-right: 1.5%;
     width: 95%;
     height: auto;

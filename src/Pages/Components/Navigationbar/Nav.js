@@ -13,8 +13,8 @@ function Nav () {
         <nav>
             <Link to = '/' className = 'rD'>RD</Link>
             <Link></Link>
-            <Link to = '/projects' className = 'links'>ABOUT</Link>
-            <Link to = 'contact' className = 'links'>CONTACT</Link>
+            <Link to = '/about' className = 'links'>ABOUT</Link>
+            <Link to = '/contact' className = 'links'>CONTACT</Link>
         </nav>
         </motion.div>
         </AnimatePresence>

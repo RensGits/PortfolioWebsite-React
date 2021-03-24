@@ -1,0 +1,28 @@
+.szSectionTwo {
+    display: grid;
+    justify-items: center;
+    
+    
+    height: 100%;
+    width: 100%;
+}
+
+.szSectionThree {
+    background-color: ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.szSectionFour {
+    display: grid;
+    justify-items: center;
+    
+    height: 100%;
+}
+
+.szSectionFive {
+    
+    height: 100%;
+}
