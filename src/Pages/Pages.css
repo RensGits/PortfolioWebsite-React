@@ -1,0 +1,127 @@
+.quoteHeader{
+  margin-top: 6%;
+    font-size: 4.7vh;
+}
+
+
+
+.infoText{
+    font-size: 0.8rem;
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.virusBody{
+    height: auto;
+    display: grid;
+    margin-top: 10%;
+    grid-template-rows: 25.5vh 14vh 4vh 40vh 5vh 75vh 5vh 80vh 5vh 10vh 25vh 10vh;
+   
+  }
+
+  .weedDoctorBody{
+    height: auto;
+    display: grid;
+    margin-top: 10%;
+    grid-template-rows: 33vh 18vh 4vh 106vh 60vh 100vh;
+   
+  }
+
+  
+.naturalisBody{
+  height: auto;
+  display: grid;
+  margin-top: 10%;
+  grid-template-rows: 28vh 20vh;
+  width:91vh;
+}
+
+.somzoaBody{
+  width: 91vh;
+  height: auto;
+  display: grid;
+  margin-top: 10%;
+  grid-template-rows: 15vh 16vh 5vh 310vh 5vh ;
+  
+  grid-template-columns: 91vh;
+}
+
+.aboutBody{
+  width:91vh;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  margin-top: 10%;
+  grid-template-rows: 33vh 47vh 25vh 150vh 10vh ;
+ 
+}
+
+.contactBody {
+  height: auto;
+  width: 91vh;
+  display: grid;
+  justify-items: center;
+  margin-top: 15%;
+  grid-template-rows: 10vh 50vh 6vh;
+  
+
+}
+
+
+  button{
+    
+    font-size: 0.9vh;
+    z-index: 1000;
+    width: 11vh;
+    height: 2.3vh;
+    background-color: red;
+    color:white;
+    border-radius: 0;
+    border-style:hidden;
+    margin-right: 4%;
+    margin-top: 2%;
+  }
+
+  button:hover{
+    color:black;
+    cursor: pointer;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 23vh;
+    gap: 2vh;
+    
+    
+
+  }
+
+  @media only screen and (max-width: 900px) {
+    .aboutBody{
+      height: auto;
+      display: grid;
+      justify-items: center;
+      margin-top: 10%;
+      
+     
+    }
+
+    
+.contactBody {
+  height: auto;
+  width: 90vw;
+  display: grid;
+  justify-content: center !important;
+  margin-top: 15%;
+  grid-template-rows: 10vh 50vh 6vh;
+  position: absolute;
+
+}
+
+.gif{
+  width: 400px;
+  height: auto;
+}
+  }

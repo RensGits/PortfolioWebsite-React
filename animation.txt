@@ -1,0 +1,2 @@
+https://egghead.io/lessons/react-trigger-state-based-react-animations-using-framer-motion       <-- animating differnt div then event trigger
+https://github.com/framer/motion/issues/306

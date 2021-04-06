@@ -1,0 +1,16 @@
+.underConstruction{
+    display: grid;
+    margin-top: 20vh;
+    height: 50vh;
+    width: 90vh;
+    background-color: red;
+    opacity: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.constructionTitle{
+    margin-left: 2vh;
+    margin-top: 21vh;
+    font-size: 7rem;
+}
