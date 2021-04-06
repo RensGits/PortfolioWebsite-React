@@ -21,6 +21,18 @@ derived or ancestral traits. My work at Naturalis was to see if I could do just 
         
       
 
+<model-viewer src="../Assets/Tipula.glb" camera-controls>
+
+<div class="progress-bar hide" slot="progress-bar">
+    <div class="update-bar"></div>
+</div>
+<button slot="ar-button" id="ar-button">
+    View in your space
+</button>
+<div id="ar-prompt">
+    <img src="https://modelviewer.dev/shared-assets/icons/hand.png" alt = ''></img>
+    </div>
+</model-viewer>
 
 
         <div className = 'footer'><div className = 'footerLine'></div><p className = 'footerText'>This website was build in React from scratch.</p></div>

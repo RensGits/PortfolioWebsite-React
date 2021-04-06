@@ -14,3 +14,8 @@
     margin-top: 21vh;
     font-size: 7rem;
 }
+
+model-viewer{
+    width: 800px;
+    height: 1200px;
+}
