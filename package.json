@@ -1,7 +1,7 @@
 {
   "name": "portfoliowebsite",
   "version": "0.1.0",
-  "homepage": "https://RensGits.github.io/PortfolioWebsiteDeploy",
+  "homepage": "https://RensGits.github.io/PortfolioWebsite",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^4.0.3",
