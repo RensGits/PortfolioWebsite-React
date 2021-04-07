@@ -6,7 +6,7 @@ import Virus from './Pages/Virus';
 import WeedDoctor from './Pages/WeedDoctor';
 import Naturalis from './Pages/Naturalis';
 import Somzoa from './Pages/Somzoa';
-import Chessboard from './Pages/Components/Chessboard/Chessboard';
+
 import './Pages/Components/Navigationbar/Nav.css';
 import './App.css';
 import {Route, Switch, useLocation} from 'react-router-dom';
@@ -52,7 +52,7 @@ function App() {
           <Route path = '/weeddoctor' component = {WeedDoctor} />
           <Route path = '/naturalis' component = {Naturalis} />
           <Route path = '/somzoa' component = {Somzoa} />
-          <Route path = '/chessboard' component = {Chessboard} />
+          
           
         </Switch>
         
