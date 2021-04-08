@@ -1,4 +1,7 @@
-
+.sliceGrid{
+    display: grid;
+    justify-items: center;
+}
 
 .naturalisImg{
   
@@ -8,20 +11,43 @@
 }
 
 .one {
-    width: 400px;
+    
+    width: 100%;
 }
 
 .two{
     width: 100%;
+}
+
+.three{
+    width:60%;
 }
 .naturalisImgWrapper{
     padding-top: 10%;
     width: inherit;
     display:grid;
     justify-items: center;
+    grid-template-rows: auto;
+    height: 100%;
+    margin:0;
+    gap: 4%;
 }
 
-model-viewer{
-    width: 900px;
-    height: 1200px;
+iframe{
+    width: 520px;
+    height: 720px;
+}
+
+.tipulaGrid{
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 50% 50%;
+}
+
+.tipulaGridRight {
+    display:grid;
+    gap: 3%;
+    width: 90%;
+    grid-template-rows: auto 5% auto;
+  
 }

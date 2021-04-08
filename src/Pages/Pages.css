@@ -9,6 +9,7 @@
     font-size: 0.8rem;
     text-align: justify;
     color: whitesmoke;
+    
 }
 
 .virusBody{
@@ -30,10 +31,11 @@
   
 .naturalisBody{
   height: auto;
-  display: grid;
+  display: block;
   margin-top: 10%;
-  grid-template-rows: 28vh 20vh;
+  
   width:91vh;
+  padding-bottom: 10%;
 }
 
 .somzoaBody{

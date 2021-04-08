@@ -2,6 +2,8 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Naturalis.css';
 import './Pages.css';
+import '../App.css';
+import Footer from './Components/Footer/Footer.js';
 
 
 
@@ -18,33 +20,41 @@ traits can be grouped together, i.e. species that have homologous
 structures. By looking at the form and function of these homologous 
 structures, one can try to find patterns that tell if these traits are 
 derived or ancestral traits. My work at Naturalis was to see if I could do just this for a long standing problem in evolutionary biology, namely the evolutionary history of flies, scorpidflies and fleas. To do this I made 3D models of the internal structures of different species and compared the form and function to see if we could see any patterns that either confirmed or refuted preliminairy hypothesis. I then worked on integrating these 3D models into scientific publications and now, into this website. </motion.p>
-        
-        <div className = 'naturalisImgWrapper'>
        
+    <motion.div className = 'naturalisImgWrapper'>
+       
+            <motion.div>
+            <iframe src="https://rensgits.github.io/https---github.com-RensGits-google-model-viewer/index.html" frameborder="0" ></iframe>
+            
+                
+            </motion.div>
+            <motion.div className = 'tipulaGrid'>
+           <motion.div>
+                </motion.div> 
+                <p className = 'infoTextHeader'></p>
+                </motion.div>
+                <motion.div className = 'sliceGrid'>
+                <p className = 'infoText'>To make 3D models of the insides of an insect, we used a Micro-CT scanner to make many pictures or slides that can then be imported into specialised software that rebuilds all these slides into a 3D model. But this is not enough to understand the different parts you are looking at. To differentiate between structures, one has to go through the slides and look where things start and end in a 3D dimensional plane. Here you can see one slide comming from a micro-CT scanner. You are looking at a slice of the behind of a cranefly. The bulb you see in the middle is a pump that pumps sperm to the penis, the long string that winds around the pump as shown in the 3D model. At my time at Naturalis, I created multiple of these models to then compared the form and function of all the different parts. To clarify the models, I've made anatomical illustrations highlighting every muscle found in the model to easily compare them with other species.  </p>
+                    <motion.img className = 'naturalisImg three' src = 'https://i.imgur.com/JM1idyQ.png' alt = ''></motion.img>
+                    
+                
+            </motion.div>
+            <motion.div className = 'tipulaGrid'>
+            
+            <iframe src="https://rensgits.github.io/https---github.com-RensGits-google-model-viewer/rivosa.html" frameborder="0" ></iframe>
+            <p>This is the jaw of a cranefly larvea with the muscles that are attached to it. In the illustrations below one can differentiate all the different structures that can then be references in the publication. By looking at the differences in muscle count, form and function in different species, one can get an idea of their evolutionairy history.</p>
+            </motion.div>
        <motion.img className = 'naturalisImg two' src = 'https://i.imgur.com/rGq0vlS.png' alt = ''></motion.img>
-       <motion.img className = 'naturalisImg two' src = 'https://i.imgur.com/ondaElq.png' alt = ''></motion.img>
-    
-       </div>   
-    
-    
+       
+       
+       </motion.div>   
+           
    
-    <model-viewer src="../Assets/Tipula.glb" camera-controls>
-
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
-    </div>
-    <button slot="ar-button" id="ar-button">
-        View in your space
-    </button>
-    <div id="ar-prompt">
-        <img src="https://modelviewer.dev/shared-assets/icons/hand.png" alt = ''></img>
-    </div>
-</model-viewer>
-        
+    
     
 
-
-        <div className = 'footer'><div className = 'footerLine'></div><p className = 'footerText'>This website was build in React from scratch.</p></div>
+            <motion.div>
+       <Footer /></motion.div>
         
         </motion.div>
         </AnimatePresence>
