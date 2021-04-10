@@ -20,7 +20,7 @@
 }
 
 .three{
-    width:60%;
+    width:80%;
 }
 .naturalisImgWrapper{
     padding-top: 10%;
@@ -30,7 +30,6 @@
     grid-template-rows: auto;
     height: 100%;
     margin:0;
-    gap: 4%;
 }
 
 iframe{
@@ -42,6 +41,8 @@ iframe{
     display: grid;
     gap: 2%;
     grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
 }
 
 .tipulaGridRight {

@@ -44,7 +44,7 @@ function Somzoa () {
         </motion.div>
         
         <motion.div initial = {{y: -100}} animate = {{y:0}} exit = {{y: 0}} transition = {{duration: 1.6}} className = 'szSectionFour'>
-        <ReactPlayer
+        <ReactPlayer 
                 url="https://www.youtube.com/watch?v=ucm32EmtXYk"
                 controls
                 playbackRate = {1}

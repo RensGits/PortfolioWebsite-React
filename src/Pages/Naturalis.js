@@ -23,26 +23,22 @@ derived or ancestral traits. My work at Naturalis was to see if I could do just 
        
     <motion.div className = 'naturalisImgWrapper'>
        
-            <motion.div>
+            <motion.div >
             <iframe src="https://rensgits.github.io/https---github.com-RensGits-google-model-viewer/index.html" frameborder="0" ></iframe>
             
-                
+            
             </motion.div>
-            <motion.div className = 'tipulaGrid'>
-           <motion.div>
-                </motion.div> 
-                <p className = 'infoTextHeader'></p>
-                </motion.div>
-                <motion.div className = 'sliceGrid'>
-                <p className = 'infoText'>To make 3D models of the insides of an insect, we used a Micro-CT scanner to make many pictures or slides that can then be imported into specialised software that rebuilds all these slides into a 3D model. But this is not enough to understand the different parts you are looking at. To differentiate between structures, one has to go through the slides and look where things start and end in a 3D dimensional plane. Here you can see one slide comming from a micro-CT scanner. You are looking at a slice of the behind of a cranefly. The bulb you see in the middle is a pump that pumps sperm to the penis, the long string that winds around the pump as shown in the 3D model. At my time at Naturalis, I created multiple of these models to then compared the form and function of all the different parts. To clarify the models, I've made anatomical illustrations highlighting every muscle found in the model to easily compare them with other species.  </p>
-                    <motion.img className = 'naturalisImg three' src = 'https://i.imgur.com/JM1idyQ.png' alt = ''></motion.img>
+            
+                <motion.div  className = 'tipulaGrid'>
+                <p className = 'infoText'>To make 3D models of the insides of an insect, we used a Micro-CT scanner to make many pictures or slides that can then be imported into specialised software that rebuilds all these slides into a 3D model. But this is not enough to understand the different parts you are looking at. To differentiate between structures, one has to go through the slides and look where things start and end in a 3D dimensional plane. Here you can see one slide comming from a micro-CT scanner. You are looking at a slice of the behind of a cranefly. The bulb you see in the middle is a pump that pumps sperm to the penis, the long string that winds around the pump. I created multiple of these models to compare the form and function. To clarify the models, I've made illustrations referencing every muscle found in the model.  </p>
+                <motion.img className = 'naturalisImg three' src = 'https://i.imgur.com/JM1idyQ.png' alt = ''></motion.img>   
                     
                 
             </motion.div>
             <motion.div className = 'tipulaGrid'>
             
             <iframe src="https://rensgits.github.io/https---github.com-RensGits-google-model-viewer/rivosa.html" frameborder="0" ></iframe>
-            <p>This is the jaw of a cranefly larvea with the muscles that are attached to it. In the illustrations below one can differentiate all the different structures that can then be references in the publication. By looking at the differences in muscle count, form and function in different species, one can get an idea of their evolutionairy history.</p>
+            <p className = 'infoText'>This is the jaw of a cranefly larvea with the muscles that are attached to it. In the illustrations below one can differentiate all the different structures that can then be references in the publication. By looking at the differences in muscle count, form and function in different species, one can get an idea of their evolutionairy history.</p>
             </motion.div>
        <motion.img className = 'naturalisImg two' src = 'https://i.imgur.com/rGq0vlS.png' alt = ''></motion.img>
        

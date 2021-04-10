@@ -39,5 +39,4 @@ function Virus () {
 
 export default Virus;
 
-//<img className = 'topImage' src="VirusAppImg.png" alt=""/>
         
