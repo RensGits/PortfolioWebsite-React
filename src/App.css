@@ -7,9 +7,13 @@
 p, a {
   color:white;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.4vh;
+ 
   text-decoration: none;
 
+}
+
+a{
+  font-size: 0.7em;
 }
 h2{
   color:white;
@@ -19,17 +23,19 @@ h2{
 a:hover {
   color: red;
 }
+
+
 .links {
   font-size: 2rem;
 }
 
 .hi {
-  font-size: 1.7vh;
+  font-size: 0.95em;
 }
 .cV{
   margin-top: 1vh;
   color: #E57070;
-  font-size: 1.4vh;
+  font-size: 0.9em;
   text-decoration: line-through;
 }
 
@@ -37,50 +43,30 @@ a:hover {
   text-decoration: white;
 }
 
-#root {
-  display: grid;
-  grid-template-columns:  100%;
-  justify-content: center;
-  background-color: black;
-  position: relative;
-  z-index: 0;
-  height: auto;
-  
-}
+
 
 .appGrid {
-  display: grid;
-  grid-template-columns: 0vh 91vh 0vh;
-  
-  justify-content: center;
-  height: auto;
+  display: flex;
   width: 100%;
-  background-color:black;
-  position: relative;
-  z-index: 0;
+  justify-content: center;
+  margin: 0;
+
 }
-
-
 
 
 
 
 .homeBody{
-  width: 91vh;
-  height: auto;
-  display: grid;
+  width: 57em;
+  height: auto; 
   margin-top: 10vh;
-  grid-template-rows: 4vh 4vh 4vh 5vh 200vh 20vh;
- 
+  
  
 
 }
 
 @media screen and (max-width: 730px),(orientation: portrait)  {
-  .homeBody{
-    width: 90vw;
-    }
-    .appGrid {grid-template-columns: 0vh 91vw 0vh;}
+ 
   
 }
 
@@ -104,11 +90,13 @@ a:hover {
   width: 100%;
   border-top: 0.1vh solid #E57070;
   margin-bottom: 10vh;
+  margin-top: 10vh;
  
 }
 
 .footerText{
   margin-top: -4.3vh;
+  font-size: 0.85em;
   
   
 

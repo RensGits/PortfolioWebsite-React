@@ -1,16 +1,19 @@
 import React from 'react';
 import '../ProjectItem/ProjectItem.css';
-import {AnimatePresence, motion, AnimateSharedLayout } from 'framer-motion';
+import {AnimatePresence, motion} from 'framer-motion';
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
-
+import useSound from 'use-sound';
+import clickyBoi from '../Navigationbar/clickyboi.mp3';
 
 
 
 function ProjectItem (props) {
     const [proportions,setProportions] = useState ('30% 100%')
     const [opacityBlockLeft, setOpcacityBlockLeft] = useState ('1')
-    
+    const [playActive] = useSound(
+        clickyBoi,
+        { volume: 0.5 });
    
 
     return (
@@ -45,7 +48,7 @@ function ProjectItem (props) {
                 
             </motion.div>
             <div className = {props.blockright}>
-            <Link to = {props.link}><button className = 'conditionalButton'>TO PROJECT</button></Link>
+            <Link  to = {props.link}><button onClick = {playActive} className = 'conditionalButton'>TO PROJECT</button></Link>
                 <img className = {props.className} src= {props.image} alt=""/>
                 
                 

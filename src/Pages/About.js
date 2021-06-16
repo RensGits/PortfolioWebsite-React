@@ -3,14 +3,14 @@ import {AnimatePresence, motion} from 'framer-motion';
 import './About.css';
 import './Pages.css';
 import Footer from './Components/Footer/Footer';
-
+import { Link } from 'react-router-dom';
 
 function About () {
     return (
         <AnimatePresence exitBeforeEnter> 
         
         <motion.div  className = 'aboutBody' initial = {{opacity: 0}} animate = {{opacity: 1}} exit = {{opacity: 0}}>
-        <motion.p initial = {{y: -100}} animate = {{y:0}} exit = {{y: 0}} transition = {{duration: 0.8}} className = 'quoteHeader center'> " I love to explore and learn. Design and development will allow me to keep doing just that. " </motion.p>
+        <motion.p initial = {{y: -100}} animate = {{y:0}} exit = {{y: 0}} transition = {{duration: 0.8}} className = 'quoteHeader center'> " I love to create interesting experiences and learn new things on the way. Design and development will allow me to keep doing just that. " </motion.p>
         <motion.img initial = {{y: -100}} animate = {{y:0}} exit = {{y: 0}} transition = {{duration: 1}} className = 'clownImg' src="https://i.imgur.com/t6SS1Nx.png" alt=""/>
         <motion.p initial = {{y: -100}} animate = {{y:0}} exit = {{y: 0}} transition = {{duration: 1.2}} className = 'center'> I’ve always had
               a passion for graphic design, but my interest have shifted over
@@ -34,7 +34,7 @@ function About () {
             <motion.img style = {{width: '100%'}} src="https://i.imgur.com/PVqabhH.png" alt=""/>
 
         </motion.div>
-        
+        <Link to = {'/contact'}><a style = {{fontSize: "1.5em"}}>{"---> Get in touch <---"}</a></Link> 
         
         <Footer />
         </motion.div>

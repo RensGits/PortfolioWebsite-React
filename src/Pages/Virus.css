@@ -1,38 +1,45 @@
+
+
 .topImage {
     width: 100%;
     height: auto;
 }
 
 .sectionTwo {
-    display: grid;
-    justify-items: center;
-    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
     background-color:#A6A39E;
-    height: 100%;
+    height: auto;
 }
 
 .sectionThree {
     background-color:#f2efe9;
-    height: 100%;
+    height: auto;
+    margin-bottom: 3em;
 }
 
 .sectionFour {
     background-color:#DEDAD4;
-    height: 100%;
+    height: auto;
+    margin-bottom: 3em;
     
 }
 
 .sectionFive {
     background-color: white;
-    height: 100%;
+    height: auto;
+    margin-bottom: 3em;
 }
 
 .virusAppImgSectionTop{
    
     margin-top: 4.5%;
+    margin-bottom: 4.5%;
     margin-right: 1.5%;
     width: 95%;
     height: auto;
+    top:0;
 }
 
 .virusAppImgSectionTwo{

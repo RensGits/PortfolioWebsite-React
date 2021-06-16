@@ -4,24 +4,25 @@
     justify-items: center;
     
     background-color:black;
-    height: 100%;
+    height: auto;
 }
 
 .wdsectionThree {
     background-color:black;
-    height: 100%;
+    height: auto;
+    margin-top: 10%;
 }
 
 .wdsectionFour {
     background-color:black;
-    height: 100%;
+    height: auto;
     margin-top: 10%;
     
 }
 
 .wdsectionFive {
    
-    height: 100%;
+    height: auto;
 }
 
 

@@ -1,52 +1,27 @@
 .quoteHeader{
-  margin-top: 6%;
-    font-size: 4.7vh;
+  margin-top: 5vh;
+    font-size: 2.3em;
 }
 
 
 
 .infoText{
-    font-size: 0.8rem;
+    font-size: 0.8em;
     text-align: justify;
     color: whitesmoke;
+    margin-bottom: 6vh;
+}
+
+.projectBody{
+  
     
-}
-
-.virusBody{
-    height: auto;
-    display: grid;
     margin-top: 10%;
-    grid-template-rows: 25.5vh 14vh 4vh 40vh 5vh 75vh 5vh 80vh 5vh 10vh 25vh 10vh;
+    width: 57em;
+    
    
   }
 
-  .weedDoctorBody{
-    height: auto;
-    display: grid;
-    margin-top: 10%;
-    grid-template-rows: 33vh 18vh 4vh 106vh 60vh 100vh;
-   
-  }
 
-  
-.naturalisBody{
-  height: auto;
-  display: block;
-  margin-top: 10%;
-  
-  width:100%;
-  padding-bottom: 10%;
-}
-
-.somzoaBody{
-  width: 91vh;
-  height: auto;
-  display: grid;
-  margin-top: 10%;
-  grid-template-rows: 15vh 16vh 5vh 310vh 5vh ;
-  
-  grid-template-columns: 91vh;
-}
 
 .aboutBody{
   width:91vh;
@@ -92,7 +67,7 @@
   .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100%;
+    margin-bottom: 2vh;
     width: 23vh;
     gap: 2vh;
     

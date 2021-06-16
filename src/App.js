@@ -6,14 +6,13 @@ import Virus from './Pages/Virus';
 import WeedDoctor from './Pages/WeedDoctor';
 import Naturalis from './Pages/Naturalis';
 import Somzoa from './Pages/Somzoa';
-
+import GameOfLife from './Pages/GameOfLife'
+import {Route, Switch, useLocation} from 'react-router-dom';
+import { AnimatePresence} from 'framer-motion';
+import ParticlesBg from 'particles-bg';
+import React from 'react';
 import './Pages/Components/Navigationbar/Nav.css';
 import './App.css';
-import {Route, Switch, useLocation} from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
-import ParticlesBg from 'particles-bg';
-import ScrollToTop from './Pages/ScrollToTop';
-import React from 'react';
 
 function App() {
 
@@ -35,14 +34,14 @@ function App() {
   };
 
   return (
-    <div>
+    
     
       <div className = 'appGrid' >
       <ParticlesBg type= 'custom' config = {config} bg={true} />
-        <Nav/>
+        
        
         <AnimatePresence >
-        
+        <Nav/>
         <Switch location = {location} key = {location.key}>
        
           <Route path = "/" exact component = {Home} />
@@ -52,14 +51,14 @@ function App() {
           <Route path = '/weeddoctor' component = {WeedDoctor} />
           <Route path = '/naturalis' component = {Naturalis} />
           <Route path = '/somzoa' component = {Somzoa} />
-          
+          <Route path = '/gameoflife' component = {GameOfLife} />
           
         </Switch>
         
         </AnimatePresence>
         
       </div>
-      </div>
+      
    
   );
 }

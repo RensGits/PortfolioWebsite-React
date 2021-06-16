@@ -1,8 +1,8 @@
 nav {
-    position: relative;
+    position: sticky;
     z-index: 1000;
     display: grid;
-    width: 92.5vh;
+    width: 57em;
     height: 8vh;
     padding-bottom: 1%;
     grid-template-columns: 5% 77.2% 10% 10%;
@@ -18,15 +18,16 @@ nav {
     text-decoration: none;
     font-weight: 700;
     color: #E57070;
-    font-size: 1.5vh;
+    font-size: 1em;
   } 
 
   .rD:hover{
-    color: white
+    color: white;
+    font-size: 1.1em;
   }
   .links {
     text-justify: right;
-    font-size: 1.3vh;
+    font-size: 0.8em;
     color: #E57070;
     text-decoration: underline;
     text-decoration-thickness: 0.125;
@@ -36,21 +37,9 @@ nav {
 
   .links:hover{
       color:white;
+      font-size: 0.9em;
   }
 
  @media only screen and (max-width: 900px){
-  nav {
-    position: relative;
-    z-index: 1000;
-    display: grid;
-    width: 100vw  !important;
-    height: 4vh;
-    padding-bottom: 4%;
-    gap: 5vw;
-    grid-template-columns: 33% 0% 33% 33%;
-    background-color: black;
-    align-items: flex-end;
-    position: fixed;
-    
-  }
+
  }
