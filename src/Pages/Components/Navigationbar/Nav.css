@@ -1,12 +1,11 @@
 nav {
     position: sticky;
     z-index: 1000;
-    display: grid;
+    display: flex;
     width: 57em;
     height: 8vh;
     padding-bottom: 1%;
-    grid-template-columns: 5% 77.2% 10% 10%;
-    grid-template-rows: 100%;
+   
     background-color: black;
     align-items: flex-end;
     position: fixed;
@@ -19,6 +18,7 @@ nav {
     font-weight: 700;
     color: #E57070;
     font-size: 1em;
+    flex:6;
   } 
 
   .rD:hover{
@@ -26,11 +26,13 @@ nav {
     font-size: 1.1em;
   }
   .links {
-    text-justify: right;
+    display: grid;
+    justify-content: end;
     font-size: 0.8em;
     color: #E57070;
     text-decoration: underline;
     text-decoration-thickness: 0.125;
+    flex:1;
     
     
   }
@@ -40,6 +42,25 @@ nav {
       font-size: 0.9em;
   }
 
- @media only screen and (max-width: 900px){
 
- }
+  @media screen and (max-width: 950px),(orientation: portrait)  {
+    nav{
+   
+    }
+    
+  }
+    
+  
+  
+  
+  @media screen and (max-width: 730px),(orientation: portrait)  {
+    nav{
+    
+      
+    }
+    .links{
+      
+      
+    }
+    
+  }

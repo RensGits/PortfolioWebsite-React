@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Naturalis.css';
-import './Pages.css';
 import '../App.css';
 import Footer from './Components/Footer/Footer.js';
 

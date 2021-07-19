@@ -1,3 +1,14 @@
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 #myScrollbar {
   width: 100vw;
   height: 100vh;
@@ -7,14 +18,16 @@
 p, a {
   color:white;
   font-family: 'Roboto', sans-serif;
- 
-  text-decoration: none;
-
+  
 }
 
-a{
-  font-size: 0.7em;
+.aProjects{
+  font-size: 0.7em !important;
+  text-decoration: none !important;
 }
+
+
+
 h2{
   color:white;
   font-family: 'Roboto', sans-serif;
@@ -24,63 +37,55 @@ a:hover {
   color: red;
 }
 
-
 .links {
   font-size: 2rem;
 }
 
 .hi {
   font-size: 0.95em;
+ 
 }
+
+
+
+
+
 .cV{
   margin-top: 1vh;
   color: #E57070;
   font-size: 0.9em;
-  text-decoration: line-through;
+  
 }
 
 .cV:hover{
   text-decoration: white;
+  text-decoration: line-through;
 }
 
-
-
-.appGrid {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin: 0;
-
+button{
+  font-size: 0.9vh;
+  z-index: 1000;
+  width: 11vh;
+  height: 2.3vh;
+  background-color: red;
+  color:white;
+  border-radius: 0;
+  border-style:hidden;
+  margin-right: 4%;
+  margin-top: 2%;
 }
 
-
-
-
-.homeBody{
-  width: 57em;
-  height: auto; 
-  margin-top: 10vh;
-  
- 
-
+button:hover{
+  color:black;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 730px),(orientation: portrait)  {
- 
-  
-}
-
-
-
-
-.projectBody{
-  height: auto;
-  display: block;
-  grid-template-rows: auto;
- 
-  
- 
-  
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2vh;
+  width: 23vh;
+  gap: 2vh;
 }
 
 .footer {
@@ -91,14 +96,101 @@ a:hover {
   border-top: 0.1vh solid #E57070;
   margin-bottom: 10vh;
   margin-top: 10vh;
- 
 }
 
 .footerText{
   margin-top: -4.3vh;
   font-size: 0.85em;
+}
+
+.quoteHeader{
+  margin-top: 5vh;
+    font-size: 2.3em;
+}
+
+.infoText{
+    font-size: 0.8em;
+    text-align: justify;
+    color: whitesmoke;
+    margin-bottom: 6vh;
+}
+
+
+
+.appGrid {
+  display: grid;
+  width: 100vw;
+  justify-content: center;
+  margin: 0;
+  overflow: contain;
+}
+
+.homeBody{
+  width: 57em;
+  height: auto; 
+  margin-top: 10vh;
+}
+
+.projectBody{
+    margin-top: 7em;
+    width: 57em;
+  }
+
+
+
+.aboutBody{
+  width:57em;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  margin-top: 10%;
+  ;
+}
+
+.contactBody {
+  height: 97vh;
+  width: 57em;
+  text-align: center;
+  margin-top: 15%;
+ 
+}
+
+.playgroundBody{
+  height: min-content;
+  width: 57em;
+  margin-top: 15%;
+}
+@media screen and (max-width: 950px),(orientation: portrait)  {
+  .projectBody{
   
+  }
+
+  .hi{
+    
+  }
+  .cV{
+   
+  }
+  
+}
   
 
 
+
+@media screen and (max-width: 730px),(orientation: portrait)  {
+  
+  
+
+  .projectBody{
+   
+  }
+
+  .hi{
+    
+  }
+  
+  .cV{
+    
+  }
+  
 }

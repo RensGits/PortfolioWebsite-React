@@ -1,8 +1,6 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './GameOfLife.css'
-import './Pages.css'
-
 import Footer from './Components/Footer/Footer';
 
 function GameOfLife () {

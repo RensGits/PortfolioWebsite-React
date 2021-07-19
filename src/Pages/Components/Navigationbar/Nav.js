@@ -22,6 +22,7 @@ function Nav () {
         <nav>
             <Link onClick = {playActive}  to = '/' className = 'rD'>RD</Link>
             <Link></Link>
+            <Link onClick = {playActive} to = '/playground' className = 'links'>PLAYGROUND</Link>
             <Link onClick = {playActive} to = '/about' className = 'links'>ABOUT</Link>
             <Link onClick = {playActive} to = '/contact' className = 'links'>CONTACT</Link>
         </nav>

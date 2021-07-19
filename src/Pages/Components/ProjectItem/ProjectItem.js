@@ -19,32 +19,33 @@ function ProjectItem (props) {
     return (
         <AnimatePresence exitBeforeEnter>
         <motion.div key = 'item' layout className = 'projectItem' onMouseEnter = {
-            function Animation() {
+            () => {
                 setProportions ('0% 100%'); setOpcacityBlockLeft ('0')}
                 } 
                 onMouseLeave = {
-                    function Animation() {setProportions ('30% 100%'); setOpcacityBlockLeft ('1')}
+                    () => {setProportions ('30% 100%'); setOpcacityBlockLeft ('1')}
                     } 
-            initial = {{y: -100, 'grid-template-columns': '30% 100%',  opacity: 1}} 
-            animate = {{y:0, 'grid-template-columns': proportions,  opacity: 1}} 
-            exit = {{y: 0, opacity: 0}} 
+            initial = {{y: -100, 'grid-template-columns': '30% 100%'}} 
+            animate = {{y:0, 'grid-template-columns': proportions}} 
+            exit = {{y: 0}} 
             transition = {{duration: props.duration}} >
                 
             <motion.div className = 'projectBlockLeft' >
                 <motion.p className = 'projectTitle' 
-                    inital = {{opacity:1}} animate ={{opacity: opacityBlockLeft}}
+                    animate ={{opacity: opacityBlockLeft}}
+                    
                      >
                        
                 {props.projectname}
                 </motion.p>
                 
-                <motion.p className = 'projectDescription' inital = {{opacity:1}} animate ={{opacity: opacityBlockLeft}} >{props.description}</motion.p>
+                <motion.p className = 'projectDescription' animate ={{opacity: opacityBlockLeft}} >{props.description}</motion.p>
                
-                <motion.p className = 'projectCategory' inital = {{opacity:1}} animate ={{opacity: opacityBlockLeft}} >{props.category}</motion.p>
+                <motion.p className = 'projectCategory' animate ={{opacity: opacityBlockLeft}} >{props.category}</motion.p>
                 
             </motion.div>
             <motion.div className = 'projectOverlay' whileHover = {{opacity: 0.7}} >
-            <Link to = {props.link} className = 'button'>TO PROJECT</Link>
+            <Link to = {props.link} className = 'button aProject'>TO PROJECT</Link>
                 
             </motion.div>
             <div className = {props.blockright}>

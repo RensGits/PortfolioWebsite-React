@@ -7,12 +7,15 @@ import WeedDoctor from './Pages/WeedDoctor';
 import Naturalis from './Pages/Naturalis';
 import Somzoa from './Pages/Somzoa';
 import GameOfLife from './Pages/GameOfLife'
+import Playground from './Pages/Playground';
 import {Route, Switch, useLocation} from 'react-router-dom';
 import { AnimatePresence} from 'framer-motion';
 import ParticlesBg from 'particles-bg';
 import React from 'react';
 import './Pages/Components/Navigationbar/Nav.css';
 import './App.css';
+import CssBaseline from '@material-ui/core/CssBaseline';
+
 
 function App() {
 
@@ -37,6 +40,7 @@ function App() {
     
     
       <div className = 'appGrid' >
+        <CssBaseline />
       <ParticlesBg type= 'custom' config = {config} bg={true} />
         
        
@@ -52,6 +56,7 @@ function App() {
           <Route path = '/naturalis' component = {Naturalis} />
           <Route path = '/somzoa' component = {Somzoa} />
           <Route path = '/gameoflife' component = {GameOfLife} />
+          <Route path = '/playground' component = {Playground} />
           
         </Switch>
         
