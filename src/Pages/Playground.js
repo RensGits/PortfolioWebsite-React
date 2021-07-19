@@ -1,12 +1,13 @@
 
 import React, {useRef} from 'react';
 import { Canvas, useFrame } from "@react-three/fiber";
-import {MeshWobbleMaterial, softShadows, OrbitControls, useGLTF } from "@react-three/drei";
+import {MeshWobbleMaterial, softShadows, OrbitControls, Loader} from "@react-three/drei";
 import Footer from './Components/Footer/Footer';
 import '../App.css';
 import './Playground.css';
 import Syntax from './Components/SyntaxHighlighter/Syntax';
-import Beetle from './Components/BeetleModel/Beetle';
+
+import BeetleAnimated from './Components/BeetleModel/BeetleAnimated';
 import { Suspense } from 'react';
 
 
@@ -57,8 +58,131 @@ function ThorusKnot({position}){
 export default function Playground() {
     return (
         <div className = 'playgroundBody'>
-            <p style = {{fontSize: '0.9em !important', marginBottom: '5em'}}>On this page you can find out more about what i'm up to at the moment. Let me share with you what i'm learning.</p>
-            <PostHeader subject = "React-Three-Fiber basics: setting up a scene, lighting & orbital controls" date = '19/07/2021'/>
+            <p style = {{fontSize: '0.9em', marginBottom: '5em'}}>On this page you can find out more about what i'm up to at the moment. Let me share with you what i'm learning.</p>
+            
+            
+            <PostHeader subject = 'Loading animated GLTF into react-three-fiber' date = '20/07/2021'/>
+            <p style = {{fontSize: '0.9em', marginBottom: '4em'}}>
+                With a little bit of knowledge of Blender, displaying 3D animations in the browser become really easy with Poinmanders 'gltfjsx' command line tool. 
+                <br/><br/>
+            To start off this project, I've created this low-poly beetle in blender, rigged the model with a skeleton and added inverse kinematics to the leg bones, making it easier to animate the leg positions when for instance landing back on the ground. Setting up the inverse kinematics and configuring which meshes should be transformed by which bone can be quite some work, but once ready animating becomes a lot easier and a lot of fun. Animating your model is then as simple as dragging the bones into position every few frames and blender takes care of the rest.</p>
+<img style = {{width: '100%', marginBottom: '2em'}} src="/beetleRig.gif" alt="" />            
+<p style = {{fontSize: '0.9em', marginBottom: '2em'}}>I then exported the model as .glb and 'ran npx gltfjsx beetle.glb' to create a jsx component that will look something like this (I've added the useEffect hook to play the animation, and castShadow to the meshes): </p>
+<Syntax codeString = {`export default function Model(props) {
+  const group = useRef()
+  const { nodes, materials, animations } = useGLTF('/beetleAnimated.glb')
+  const { actions } = useAnimations(animations, group)
+  useEffect(() => {
+    actions.idleanimations.play();
+  })
+  return (
+    <group ref={group} {...props} dispose={null}>
+      <group name="Armature" rotation={[0.06, 0, 0]}>
+        <primitive object={nodes.root} />
+        <primitive object={nodes.IKtargetL} />
+        <primitive object={nodes.arm1upL005} />
+        <primitive object={nodes.IKtarget2L} />
+        <primitive object={nodes.IKpole2L} />
+        <primitive object={nodes.IKtarget3L} />
+        <primitive object={nodes.IKTarget3L} />
+        <primitive object={nodes.IKTargetM} />
+        <primitive object={nodes.IKtargetR} />
+        <primitive object={nodes.arm1upR005} />
+        <primitive object={nodes.IKtarget2R} />
+        <primitive object={nodes.IKpole2R} />
+        <primitive object={nodes.IKtarget3R} />
+        <primitive object={nodes.IKTarget3R} />
+        <skinnedMesh castShadow
+          geometry={nodes.Cube002.geometry}
+          material={materials.Material}
+          skeleton={nodes.Cube002.skeleton}
+        />
+        <skinnedMesh castShadow
+          geometry={nodes.Cube002_1.geometry}
+          material={materials['Material.001']}
+          skeleton={nodes.Cube002_1.skeleton}
+        />
+        <skinnedMesh castShadow
+          geometry={nodes.Cube002_2.geometry}
+          material={materials['Material.002']}
+          skeleton={nodes.Cube002_2.skeleton}
+        />
+      </group>
+    </group>
+  )
+}
+
+useGLTF.preload('/beetleAnimated.glb')`} />         
+
+<p style = {{fontSize: '0.9em', marginBottom: '2em', marginTop: '3em'}}>{`Then throw your model into the Canvas, wrap it in a <Suspense></Suspense> and you are good to go!`}</p>
+        
+<Canvas style = {{height: '40em'}} className = 'canvas' shadows colorManangement camera = {{position: [-20, 0, 20], fov: 50}}>
+    
+    <ambientLight intensity = {0.8}/>
+    <directionalLight
+            castShadow 
+            position = {[0,10,0]} 
+            intensity = {1.5} 
+            shadow-mapSize-Width = {1024}
+            shadow-mapSize-Height = {1024}
+            shadow-camera-far = {50}
+            shadow-camera-left = {-15}
+            shadow-camera-right = {10}
+            shadow-camera-top = {15}
+            shadow-camera-bottom = {-15}/>
+    <pointLight position = {[-10,0,20]} intensity={0.5}/>
+    <pointLight position = {[-5,0,10]} intensity={0.5}/>   
+    
+    <mesh receiveShadow rotation = {[-Math.PI / 2,0,1]} position = {[0,-4,0]}>
+        <planeBufferGeometry args = {[200,200]} />
+        <shadowMaterial opacity = {0.3} />  
+    </mesh>
+
+    <Suspense fallback = {null}>
+        <BeetleAnimated position = {[0,-4,1]}/>
+    </Suspense>
+
+    <OrbitControls/>
+
+</Canvas>
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <PostHeader subject = "React-Three-Fiber basics: setting up a scene, lighting & orbital controls" date = '16/07/2021'/>
             <p style = {{fontSize: '0.8em', marginBottom: '2em'}}>At the time of making this website, react-three-fiber was not compatible with react version 16.8. As I just invested my time in creating page transitions with <span><a href = 'https://www.framer.com/docs/' target = '_blank'> framer-motion</a></span> , and since framer motion requires react 16.8 and up, i decided to integrate my models using google's <span><a href = 'https://modelviewer.dev/' target="_blank">Model-Viewer</a></span>.I ran into some compatibility issues and was able to get my models up by launching a seperate react project and framing my models with Iframe. It wasn't a great solution and I decided to wait until React-three-fiber released an update that would allow me to use it with react 16.8. And long behold, shortly after they rolled out a release that supports react 16.8: <span><a href = 'https://docs.pmnd.rs/react-three-fiber/getting-started/introduction' target = '_blank'> @react-three/fiber.</a></span></p>
             <p style = {{fontSize: '0.8em'}}>
             {"To display 3D models we need to set up a 3D environment for the object to live in. This environment consists of a scene, a camera and a renderer. In react this is simplified by combining the scene and camera in the <Canvas> component. By placing a <mesh></mesh> jsx element we can render objects in the scene. Our mesh element requires two components; a geometry that defines the shape of the object and a material that defines the look of the object (texture, color, light-effects etc). In this case I used a boxBufferGeometry that you guessed it, defines the geometry of a cube, and a meshStandardMaterial. Any geometry in three-fiber requires an args prop that takes in an array defining the objects proportions or other parameters that concern it's form factor. In the case of our box-geometry, it takes an array of 3 parameters controlling it's size on the x, y & z axis. For all the available geometries and their args input I recommend checking out "}<span><a target = '_blank' href = 'https://threejsfundamentals.org/threejs/lessons/threejs-primitives.html#:~:text=Three.js%20has%20a%20large%20number%20of%20primitives.%20Primitives,primitives%20to%20experiment%20and%20get%20started%20with%203D.'> threejsfundamentals.org</a></span>.
@@ -161,7 +285,7 @@ export default function Example(){
         `} />
 
 
-            <Canvas style = {{height: '40em'}} className = 'canvas' shadows colorManangement camera = {{position: [-20, 0, 20], fov: 50}}>
+            <Canvas style = {{height: '40em', marginBottom: '0em'}} className = 'canvas' shadows colorManangement camera = {{position: [-20, 0, 20], fov: 50}}>
                     <ambientLight intensity = {0.2}/>
                     <directionalLight
                     castShadow 
@@ -188,10 +312,9 @@ export default function Example(){
 
             </Canvas>
 
-        <PostHeader subject = 'Loading GLTF into react-three-fiber' date = '21/07/2021'/>
+            <p style = {{fontSize: '0.8em'}}>Et voilà!</p>
 
-        
-
+       
 
 
 

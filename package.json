@@ -1,7 +1,7 @@
 {
   "name": "portfoliowebsite",
   "version": "0.1.0",
-  "homepage": "https://RensGits.github.io/PortfolioWebsite",
+  "homepage": "https://rensvdriel.com",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
