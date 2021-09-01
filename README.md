@@ -1,3 +1,1 @@
-My current portfolio.
-
-https://rensvdriel.com <---
+This repository has been transfered to https://github.com/RensGits/PortfolioV2
